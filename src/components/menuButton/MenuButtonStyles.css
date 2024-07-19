@@ -1,0 +1,15 @@
+.app-resume-menu-button {
+    position: fixed;
+    left: 250px;
+    background-color: rgba(34, 41, 53, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.app-resume-menu-button-clicked {
+    left: 54px;
+}

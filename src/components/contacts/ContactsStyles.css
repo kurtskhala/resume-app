@@ -1,0 +1,30 @@
+.app-resume-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app-resume-contacts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.app-resume-contact {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.app-resume-contact-icon {
+    width: 25px;
+    height: 25px;
+    color: rgba(38, 193, 126, 1);
+}
+
+.app-resume-contact-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+}

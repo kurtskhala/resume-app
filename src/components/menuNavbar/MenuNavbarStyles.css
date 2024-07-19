@@ -1,0 +1,19 @@
+.app-resume-menu-navbar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.app-resume-menu-navbar a {
+    display: flex;
+    column-gap: 20px;
+    color: rgba(102, 112, 129, 1);
+    cursor: pointer;
+}
+
+.app-resume-menu-navbar a:hover {
+    color: rgba(38, 193, 126, 1);
+}
+
+.app-resume-menu-navbar-clicked a h5{
+    display: none;
+}

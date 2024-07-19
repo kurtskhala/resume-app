@@ -1,0 +1,16 @@
+.app-resume-bottombutton {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(34, 41, 53, 1);
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}

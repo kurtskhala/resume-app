@@ -1,0 +1,71 @@
+.app-resume-menu {
+    position: relative;
+    flex-basis: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-height: 100vh;
+    background-color: rgba(34, 41, 53, 1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.app-resume-menu-mainInfo {
+    margin-bottom: 60px;
+}
+
+.app-resume-menu-mainInfo .app-mainInfo-user {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.app-resume-menu-mainInfo .app-mainInfo-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.app-resume-manu-button {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.app-resume-manu-button:hover {
+    background-color: rgba(38, 193, 126, 1);
+}
+
+.app-resume-menu-clicked {
+    flex-basis: 54px;
+    align-items: center;
+    padding-inline: 0;
+}
+
+.app-resume-menu-container-clicked {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-resume-manu-button-clicked span{
+    display: none;
+}
+
+.app-resume-menu-mainInfo-clicked .app-mainInfo-user {
+    width: 40px;
+    height: 40px;
+}
+
+.app-resume-menu-mainInfo-clicked .app-mainInfo-name {
+    display: none;
+}

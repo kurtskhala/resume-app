@@ -1,0 +1,76 @@
+.app-resume-education {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.app-resume-education-timeline {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 50px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.app-resume-education-timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.app-resume-education-timeline-card:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -33px;
+    width: 5px;
+    height: 100%;
+    background: #28a745;
+}
+
+.app-resume-education-timeline-card {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.app-resume-education-timeline-card:last-child {
+    margin-bottom: 0;
+}
+
+.app-resume-education-timeline-card-year {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(34, 41, 53, 1);
+}
+
+.app-resume-education-timeline-card-content {
+    background: rgba(238, 238, 238, 1);
+    padding: 15px;
+    text-align: left;
+}
+
+.app-resume-education-timeline-card-content::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #f1f1f1;
+}
+
+.app-resume-education-timeline-card-content h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+}
+
+.app-resume-education-timeline-card-content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}

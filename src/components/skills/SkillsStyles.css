@@ -1,0 +1,97 @@
+.app-resume-skills {
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.app-resume-skill {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.app-resume-skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    margin-left: 15px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.app-resume-skill-bar {
+    background-color: #e0e0e0;
+    height: 25px;
+}
+
+.app-resume-skill-level {
+    height: 100%;
+    background-color: rgba(38, 193, 126, 1);
+}
+
+.app-resume-skill-scale {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(102, 112, 129, 1);
+    margin-top: 15px;
+}
+.app-resume-skill-scale span{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+}
+
+.app-resume-skill-scale-beginner, .app-resume-skill-scale-master,
+.app-resume-skill-scale-expert, .app-resume-skill-scale-proficient {
+    position: relative;
+}
+
+.app-resume-skill-scale-beginner::after {
+    content: '';
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: -50%;
+    border-right: 1px solid black;
+}
+
+.app-resume-skill-scale-expert::after, .app-resume-skill-scale-proficient::after {
+    content: '';
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    border-right: 1px solid black;
+}
+.app-resume-skill-scale-master::after {
+    content: '';
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: -50%;
+    border-right: 1px solid black;
+}
+
+.app-resume-skills-openEdit {
+    position: absolute;
+    cursor: pointer;
+    right: 0px;
+    top: 10px;
+    z-index: 10;
+    padding: 10px 20px;
+    background-color: rgba(34, 41, 53, 1);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.app-resume-skills-openEdit:hover {
+    background-color: rgba(38, 193, 126, 1);
+}
