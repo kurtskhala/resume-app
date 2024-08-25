@@ -4,22 +4,7 @@ import Header from "../header/Header";
 import SkillForm from "../skillForm/SkillForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
-
-const data = [
-  { name: "HTML", level: 100 },
-  { name: "CSS", level: 100 },
-  { name: "JavaScript", level: 100 },
-  { name: "React", level: 100 },
-  { name: "TypeScript", level: 70 },
-  { name: "PHP", level: 30 },
-  { name: "Java", level: 30 },
-  { name: "Oracle SQL", level: 60 },
-  { name: "MySQL", level: 60 },
-  { name: "GIT", level: 100 },
-  { name: "Semantic UI", level: 80 },
-  { name: "Visual Studio", level: 100 },
-  { name: "Redux", level: 70 },
-];
+import { skills as data } from "../../constants/data";
 
 const Skills = () => {
   const [skills, setSkills] = useState([...data]);

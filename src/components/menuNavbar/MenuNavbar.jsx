@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./MenuNavbarStyles.css";
 
-const MenuNavbar = ({ menuButtonToggle }) => {
+const MenuNavbar = () => {
   const handleScroll = (event) => {
     event.preventDefault();
     const target = event.currentTarget;
@@ -21,9 +21,7 @@ const MenuNavbar = ({ menuButtonToggle }) => {
     });
   };
   return (
-    <ul
-      className={`app-resume-menu-navbar ${!menuButtonToggle && "app-resume-menu-navbar-clicked"}`}
-    >
+    <ul className="app-resume-menu-navbar">
       <li>
         <a onClick={handleScroll} href="#aboutMe">
           <FontAwesomeIcon icon={faUser} />

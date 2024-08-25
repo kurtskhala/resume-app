@@ -1,6 +1,7 @@
 .app-resume-menu-button {
     position: fixed;
     left: 250px;
+    top: 20px;
     background-color: rgba(34, 41, 53, 1);
     border: none;
     color: rgba(255, 255, 255, 1);
@@ -8,8 +9,16 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
+    transition: ease all .5s;
+
 }
 
 .app-resume-menu-button-clicked {
-    left: 54px;
+    left: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .app-resume-menu-button {
+        left: 54px;
+    }
 }

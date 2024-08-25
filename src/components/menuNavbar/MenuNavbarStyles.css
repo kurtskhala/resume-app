@@ -14,6 +14,8 @@
     color: rgba(38, 193, 126, 1);
 }
 
-.app-resume-menu-navbar-clicked a h5{
-    display: none;
+@media screen and (max-width: 600px) {
+    .app-resume-menu-navbar a h5{
+        display: none;
+    }
 }

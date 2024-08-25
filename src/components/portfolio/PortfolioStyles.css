@@ -3,11 +3,11 @@
     text-align: left;
 }
 
-.filters {
+.app-resume-portfolio-filters {
     margin-bottom: 20px;
 }
 
-.filters button {
+.app-resume-portfolio-filters button {
     border: none;
     background-color: white;
     cursor: pointer;
@@ -18,15 +18,14 @@
 }
 
 
-.items {
+.app-resume-portfolio-items {
     display: flex;
     overflow-x: scroll;
     scrollbar-width: thin;
-
 }
 
 
-.item {
+.app-resume-portfolio-item {
     position: relative;
     margin: 10px;
     flex: 1 0 298px;
@@ -37,31 +36,31 @@
     cursor: pointer;
 }
 
-.item img {
+.app-resume-portfolio-item img {
     width: 100%;
     display: block;
 }
 
-.overlay {
+.app-resume-portfolio-item-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.7); /* Set initial background to white with transparency */
+    background-color: rgba(255, 255, 255, 0.7);
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: height 0.5s ease, background-color 0.5s ease; /* Add transition for background color */
+    transition: height 0.5s ease, background-color 0.5s ease;
 }
 
-.item:hover .overlay {
+.app-resume-portfolio-item:hover .app-resume-portfolio-item-overlay {
     height: 100%;
-    background-color: rgba(255, 255, 255, 1); /* Change background to white on hover */
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
-.text {
+.app-resume-portfolio-item-text {
     white-space: wrap;
-    color: black; /* Change text color to black for better contrast with white background */
+    color: black;
     font-size: 15px;
     height: 90%;
     transition: bottom 0.5s ease;
@@ -71,14 +70,14 @@
     justify-content: space-between;
 }
 
-.text a {
+.app-resume-portfolio-item-text a {
     margin-top: 10px;
     color: rgb(155, 155, 222);
 }
-.text a:hover {
+.app-resume-portfolio-item-text a:hover {
     color: blue;
 }
 
-.item:hover .text {
+.app-resume-portfolio-item:hover .app-resume-portfolio-item-text {
     bottom: 20px;
 }

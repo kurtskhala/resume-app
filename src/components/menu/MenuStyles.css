@@ -1,5 +1,12 @@
-.app-resume-menu {
+.app-resume-menu-containers {
     position: relative;
+}
+
+.app-resume-menu {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 250px;
     flex-basis: 250px;
     flex-grow: 0;
     flex-shrink: 0;
@@ -10,6 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-self: stretch;
+    min-height: 550px;
+    height: 100vh;
+    transition: ease all .5s;
 }
 
 .app-resume-menu-mainInfo {
@@ -46,26 +56,32 @@
 }
 
 .app-resume-menu-clicked {
-    flex-basis: 54px;
-    align-items: center;
-    padding-inline: 0;
-}
-
-.app-resume-menu-container-clicked {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.app-resume-manu-button-clicked span{
     display: none;
 }
 
-.app-resume-menu-mainInfo-clicked .app-mainInfo-user {
-    width: 40px;
-    height: 40px;
-}
+@media screen and (max-width: 600px) {
+    .app-resume-menu {
+        width: 54px;
+        align-items: center;
+        padding-inline: 0;
+    }
 
-.app-resume-menu-mainInfo-clicked .app-mainInfo-name {
-    display: none;
+    .app-resume-menu-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .app-resume-manu-button span{
+        display: none;
+    }
+    
+    .app-resume-menu-mainInfo .app-mainInfo-user {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .app-resume-menu-mainInfo .app-mainInfo-name {
+        display: none;
+    }
 }
